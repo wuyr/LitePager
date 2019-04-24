@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LitePagerTest</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="minScaleText">MinScale</string>
+    <string name="maxScaleText">MaxScale</string>
+    <string name="minAlphaText">MinAlpha</string>
+    <string name="maxAlphaText">MaxAlpha</string>
+    <string name="status" formatted="false">Status: %s</string>
+    <string name="idle">Idle</string>
+    <string name="dragging_left">Dragging Left</string>
+    <string name="dragging_right">Dragging Right</string>
+    <string name="dragging_top">Dragging Top</string>
+    <string name="dragging_bottom">Dragging Bottom</string>
+    <string name="settling_left">Settling Left</string>
+    <string name="settling_right">Settling Right</string>
+    <string name="settling_top">Settling Top</string>
+    <string name="settling_bottom">Settling Bottom</string>
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LitePagerTest</string>
+    <string name="horizontal">水平滑动</string>
+    <string name="vertical">垂直滑动</string>
+    <string name="minScaleText">最小缩放</string>
+    <string name="maxScaleText">最大缩放</string>
+    <string name="minAlphaText">最小透明</string>
+    <string name="maxAlphaText">最大透明</string>
+    <string name="status" formatted="false">状态: %s</string>
+    <string name="idle">静止</string>
+    <string name="dragging_left">向左拖动</string>
+    <string name="dragging_right">向右拖动</string>
+    <string name="dragging_top">向上拖动</string>
+    <string name="dragging_bottom">向下拖动</string>
+    <string name="settling_left">向左调整</string>
+    <string name="settling_right">向右调整</string>
+    <string name="settling_top">向上调整</string>
+    <string name="settling_bottom">向下调整</string>
+</resources>
