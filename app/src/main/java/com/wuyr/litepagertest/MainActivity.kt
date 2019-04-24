@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         maxAlphaBar.setOnSeekBarChangeListener(listener)
     }
 
-    private fun onItemClick(view: View) {
+    fun onItemClick(view: View) {
         mToast.setText("${(((view as ViewGroup).getChildAt(0) as ViewGroup)
             .getChildAt(1) as TextView).text} selected")
         mToast.show()
