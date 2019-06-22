@@ -4,7 +4,7 @@
 ### 使用方式:
 #### 添加依赖：
 ```
-implementation 'com.wuyr:litepager:1.0.0'
+implementation 'com.wuyr:litepager:1.2.0'
 ```
 
 ### APIs:
@@ -16,10 +16,12 @@ implementation 'com.wuyr:litepager:1.0.0'
 |setSelection(int index)|根据索引选中子View|
 |setOrientation(int orientation)|设置方向(默认: ORIENTATION_HORIZONTAL):<br>**ORIENTATION_HORIZONTAL**(水平)<br>**ORIENTATION_VERTICAL**(垂直)|
 |setFlingDuration(long duration)|设置动画的时长|
-|setMaxScale(float maxScale)|设置**最大**缩放比例|
-|setMinScale(float minScale)|设置**最小**缩放比例|
-|setMaxAlpha(float maxAlpha)|设置**最大**不透明度|
-|setMinAlpha(float minAlpha)|设置**最小**不透明度|
+|setTopScale(float scale)|设置**顶层**缩放比例|
+|setTopAlpha(float alpha)|设置**顶层**不透明度|
+|setMiddleScale(float scale)|设置**中层**缩放比例|
+|setMiddleAlpha(float alpha)|设置**中层**不透明度|
+|setBottomScale(float scale)|设置**底层**缩放比例|
+|setBottomAlpha(float alpha)|设置**底层**不透明度|
 |setOnScrollListener(OnScrollListener listener)|设置滚动状态监听:<br>**STATE_IDLE**(静止状态)<br>**STATE_DRAGGING_LEFT**(向左拖动)<br>**STATE_DRAGGING_RIGHT**(向右拖动)<br>**STATE_DRAGGING_TOP**(向上拖动)<br>**STATE_DRAGGING_BOTTOM**(向下拖动)<br>**STATE_SETTLING_LEFT**(向左调整)<br>**STATE_SETTLING_RIGHT**(向右调整)<br>**STATE_SETTLING_TOP**(向上调整)<br>**STATE_SETTLING_BOTTOM**(向下调整)<br>|
 |setOnItemSelectedListener(SelectedListener listener) |设置子View被选中的监听|
 |getSelectedChild() |获取当前选中的子View|
@@ -29,10 +31,12 @@ implementation 'com.wuyr:litepager:1.0.0'
 |----|-----|-----------|
 |orientation|enum (默认: horizontal)<br>**horizontal**(水平)<br>**vertical**(垂直)|方向|
 |flingDuration|integer|动画时长|
-|maxScale|float (默认: 1)|**最大**缩放比例|
-|minScale|float (默认: 0.8)|**最小**缩放比例|
-|maxAlpha|float (默认: 1)|**最大**不透明度|
-|minAlpha|float (默认: 0.4)|**最小**不透明度|
+|topScale|float (默认: 1)|设置**顶层**缩放比例|
+|topAlpha|float (默认: 1)|设置**顶层**不透明度|
+|middleScale|float (默认: 0.8)|设置**中层**缩放比例|
+|middleAlpha|float (默认: 0.4)|设置**中层**不透明度|
+|bottomScale|float (默认: 0.6)|设置**底层**缩放比例|
+|bottomAlpha|float (默认: 0.2)|设置**底层**不透明度|
 
 ### 添加子View方式：
 #### XML

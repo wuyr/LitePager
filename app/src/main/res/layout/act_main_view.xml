@@ -13,266 +13,230 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/紫钗记"
-            android:layout_width="200dp"
-            android:layout_height="250dp"
-            android:onClick="onItemClick"
-            app:cardBackgroundColor="#FEF8F1"
-            app:cardCornerRadius="4dp"
-            app:cardElevation="4dp"
-            app:cardPreventCornerOverlap="true"
-            app:cardUseCompatPadding="true">
+        <include layout="@layout/layout_card_view_0" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+        <include layout="@layout/layout_card_view_1" />
 
-                <ImageView
-                    android:id="@+id/image1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/ic_2"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:gravity="center"
-                    android:text="紫钗记"
-                    android:textColor="#868ABB"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image1" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/再世红梅记"
-            android:layout_width="200dp"
-            android:layout_height="250dp"
-            android:onClick="onItemClick"
-            app:cardBackgroundColor="#98A6A6"
-            app:cardCornerRadius="4dp"
-            app:cardElevation="4dp"
-            app:cardPreventCornerOverlap="true"
-            app:cardUseCompatPadding="true">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/ic_3"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:gravity="center"
-                    android:text="再世红梅记"
-                    android:textColor="#B21C31"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image2" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/帝女花"
-            android:layout_width="200dp"
-            android:layout_height="250dp"
-            android:onClick="onItemClick"
-            app:cardBackgroundColor="#BAB179"
-            app:cardCornerRadius="4dp"
-            app:cardElevation="4dp"
-            app:cardPreventCornerOverlap="true"
-            app:cardUseCompatPadding="true">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/ic_1"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:gravity="center"
-                    android:text="帝女花"
-                    android:textColor="#BE4A42"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image3" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
+        <include layout="@layout/layout_card_view_2" />
     </com.wuyr.litepager.LitePager>
 
-    <TextView
-        android:id="@+id/status"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="24dp"
-        android:textColor="@color/colorAccent"
-        android:textSize="28sp"
-        app:layout_constraintTop_toBottomOf="@+id/litePager" />
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/litePager">
 
-    <TextView
-        android:id="@+id/horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/status" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Switch
-        android:id="@+id/orientationSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        app:layout_constraintStart_toEndOf="@+id/horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/status" />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="24dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/vertical"
-        app:layout_constraintStart_toEndOf="@+id/orientationSwitch"
-        app:layout_constraintTop_toBottomOf="@+id/status" />
+            <TextView
+                android:id="@+id/horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/status" />
 
-    <TextView
-        android:id="@+id/minScaleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/minScaleText"
-        app:layout_constraintEnd_toStartOf="@id/minScaleBar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orientationSwitch" />
+            <Switch
+                android:id="@+id/orientationSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintStart_toEndOf="@+id/horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/status" />
 
-    <SeekBar
-        android:id="@+id/minScaleBar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:max="100"
-        android:padding="8dp"
-        android:progress="80"
-        app:layout_constraintEnd_toStartOf="@id/maxScaleText"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/minScaleText"
-        app:layout_constraintTop_toBottomOf="@+id/orientationSwitch" />
+            <TextView
+                android:id="@+id/vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/vertical"
+                app:layout_constraintStart_toEndOf="@+id/orientationSwitch"
+                app:layout_constraintTop_toBottomOf="@+id/status" />
 
-    <TextView
-        android:id="@+id/maxScaleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/maxScaleText"
-        app:layout_constraintEnd_toStartOf="@id/maxScaleBar"
-        app:layout_constraintStart_toEndOf="@+id/minScaleBar"
-        app:layout_constraintTop_toBottomOf="@+id/orientationSwitch" />
+            <TextView
+                android:id="@+id/threeChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="8dp"
+                android:text="@string/three_child"
+                app:layout_constraintEnd_toStartOf="@+id/childCountSwitch"
+                app:layout_constraintTop_toBottomOf="@+id/status" />
 
-    <SeekBar
-        android:id="@+id/maxScaleBar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:max="100"
-        android:padding="8dp"
-        android:progress="100"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/maxScaleText"
-        app:layout_constraintTop_toBottomOf="@+id/orientationSwitch" />
+            <Switch
+                android:id="@+id/childCountSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/fiveChild"
+                app:layout_constraintTop_toBottomOf="@+id/status" />
 
-    <TextView
-        android:id="@+id/minAlphaText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/minAlphaText"
-        app:layout_constraintEnd_toStartOf="@+id/minAlphaBar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/minScaleBar" />
+            <TextView
+                android:id="@+id/fiveChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/five_child"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/status" />
 
-    <SeekBar
-        android:id="@+id/minAlphaBar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:max="100"
-        android:padding="8dp"
-        android:progress="60"
-        app:layout_constraintEnd_toStartOf="@id/maxAlphaText"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/minAlphaText"
-        app:layout_constraintTop_toBottomOf="@+id/minScaleBar" />
+            <TextView
+                android:id="@+id/topScaleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/topScaleText"
+                app:layout_constraintEnd_toStartOf="@id/topScaleBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal" />
 
-    <TextView
-        android:id="@+id/maxAlphaText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/maxAlphaText"
-        app:layout_constraintEnd_toStartOf="@id/maxAlphaBar"
-        app:layout_constraintStart_toEndOf="@+id/minAlphaBar"
-        app:layout_constraintTop_toBottomOf="@+id/maxScaleBar" />
+            <SeekBar
+                android:id="@+id/topScaleBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:padding="8dp"
+                android:progress="100"
+                app:layout_constraintBottom_toBottomOf="@+id/topScaleText"
+                app:layout_constraintEnd_toStartOf="@id/topAlphaText"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/topScaleText" />
 
-    <SeekBar
-        android:id="@+id/maxAlphaBar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:max="100"
-        android:padding="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintStart_toEndOf="@+id/maxAlphaText"
-        app:layout_constraintTop_toBottomOf="@+id/maxScaleBar" />
+            <TextView
+                android:id="@+id/topAlphaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/topAlphaText"
+                app:layout_constraintBottom_toBottomOf="@+id/topScaleText"
+                app:layout_constraintEnd_toStartOf="@id/topAlphaBar"
+                app:layout_constraintStart_toEndOf="@+id/topScaleBar" />
 
-    <Button
-        android:id="@+id/button0"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:onClick="select0"
-        android:text="紫钗记"
-        app:layout_constraintEnd_toStartOf="@id/button1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/minAlphaBar" />
+            <SeekBar
+                android:id="@+id/topAlphaBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/topScaleText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/topAlphaText" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:onClick="select2"
-        android:text="帝女花"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintStart_toEndOf="@+id/button0"
-        app:layout_constraintTop_toBottomOf="@id/minAlphaBar" />
+            <TextView
+                android:id="@+id/middleScaleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/middleScaleText"
+                app:layout_constraintEnd_toStartOf="@id/middleScaleBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topScaleText" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:onClick="select1"
-        android:text="再世红梅记"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button1"
-        app:layout_constraintTop_toBottomOf="@id/minAlphaBar" />
+            <SeekBar
+                android:id="@+id/middleScaleBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:padding="8dp"
+                android:progress="80"
+                app:layout_constraintBottom_toBottomOf="@+id/middleScaleText"
+                app:layout_constraintEnd_toStartOf="@id/middleAlphaText"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/middleScaleText" />
+
+            <TextView
+                android:id="@+id/middleAlphaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/middleAlphaText"
+                app:layout_constraintBottom_toBottomOf="@+id/middleScaleText"
+                app:layout_constraintEnd_toStartOf="@id/middleAlphaBar"
+                app:layout_constraintStart_toEndOf="@+id/middleScaleBar" />
+
+            <SeekBar
+                android:id="@+id/middleAlphaBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="60"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/middleScaleText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/middleAlphaText" />
+
+            <TextView
+                android:id="@+id/bottomScaleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/bottomScaleText"
+                app:layout_constraintEnd_toStartOf="@id/bottomScaleBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/middleScaleText" />
+
+            <SeekBar
+                android:id="@+id/bottomScaleBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:padding="8dp"
+                android:progress="60"
+                app:layout_constraintBottom_toBottomOf="@+id/bottomScaleText"
+                app:layout_constraintEnd_toStartOf="@id/bottomAlphaText"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/bottomScaleText" />
+
+            <TextView
+                android:id="@+id/bottomAlphaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/bottomAlphaText"
+                app:layout_constraintBottom_toBottomOf="@+id/bottomScaleText"
+                app:layout_constraintEnd_toStartOf="@id/bottomAlphaBar"
+                app:layout_constraintStart_toEndOf="@+id/bottomScaleBar" />
+
+            <SeekBar
+                android:id="@+id/bottomAlphaBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="80"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/bottomScaleText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/bottomAlphaText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,10 +2,12 @@
     <string name="app_name">LitePagerTest</string>
     <string name="horizontal">Horizontal</string>
     <string name="vertical">Vertical</string>
-    <string name="minScaleText">MinScale</string>
-    <string name="maxScaleText">MaxScale</string>
-    <string name="minAlphaText">MinAlpha</string>
-    <string name="maxAlphaText">MaxAlpha</string>
+    <string name="bottomScaleText">BottomScale</string>
+    <string name="bottomAlphaText">BottomAlpha</string>
+    <string name="topScaleText">TopScale</string>
+    <string name="topAlphaText">TopAlpha</string>
+    <string name="middleScaleText">MiddleScale</string>
+    <string name="middleAlphaText">MiddleAlpha</string>
     <string name="status" formatted="false">Status: %s</string>
     <string name="idle">Idle</string>
     <string name="dragging_left">Dragging Left</string>
@@ -16,4 +18,8 @@
     <string name="settling_right">Settling Right</string>
     <string name="settling_top">Settling Top</string>
     <string name="settling_bottom">Settling Bottom</string>
+    <string name="three_child">3 Child</string>
+    <string name="five_child">5 Child</string>
+    <string name="middle">Middle Item</string>
+    <string name="bottom">Bottom Item</string>
 </resources>
