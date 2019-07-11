@@ -4,7 +4,7 @@
 ### 使用方式:
 #### 添加依赖：
 ```
-implementation 'com.wuyr:litepager:1.2.0'
+implementation 'com.wuyr:litepager:1.2.1'
 ```
 
 ### APIs:
