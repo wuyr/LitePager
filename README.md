@@ -43,7 +43,7 @@ implementation 'com.wuyr:litepager:1.3.0'
 |bottomAlpha|float (默认: 0.2)|**底层**不透明度|
 |autoScroll|boolean (默认: false)|是否开启自动轮播|
 |autoScrollInterval|float (默认: 5000)|自动轮播的间隔|
-|autoScrollOrientation|enum (默认: left)<br>**left**(左)<br>**right**(右)<br>**up**(上)<br>**down**(下)|自动轮播的方向|
+|autoScrollOrientation|enum (默认: left)<br>**left**(向左滚动)<br>**right**(向右滚动)<br>**up**(向上滚动)<br>**down**(向下滚动)|自动轮播的方向|
 
 ### 添加子View方式：
 #### 1. XML
