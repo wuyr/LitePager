@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LitePagerTest.iml" filepath="$PROJECT_DIR$/LitePagerTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/LitePagerTest.iml" filepath="$PROJECT_DIR$/.idea/LitePagerTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LitePagerTest.iml" filepath="$PROJECT_DIR$/LitePagerTest.iml" group="LitePagerTest" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="LitePagerTest/app" />
     </modules>
   </component>
 </project>

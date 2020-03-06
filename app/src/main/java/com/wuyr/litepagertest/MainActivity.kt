@@ -24,11 +24,11 @@ class MainActivity : AppCompatActivity() {
         initListeners()
     }
 
-    private lateinit var mToast: Toast
+    private lateinit var toast: Toast
 
     @SuppressLint("ShowToast")
     private fun initListeners() {
-        mToast = Toast.makeText(this, "", Toast.LENGTH_LONG)
+        toast = Toast.makeText(this, "", Toast.LENGTH_LONG)
         litePager.setOnItemSelectedListener { onItemSelected(it) }
         litePager.setOnScrollListener {
             status.text = getString(
@@ -98,18 +98,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onItemSelected(view: View) {
-        mToast.setText(
+        toast.setText(
             "${(((view as ViewGroup).getChildAt(0) as ViewGroup)
                 .getChildAt(1) as TextView).text} selected"
         )
-        mToast.show()
+        toast.show()
     }
 
     fun onItemClick(view: View) {
-        mToast.setText(
+        toast.setText(
             "${(((view as ViewGroup).getChildAt(0) as ViewGroup)
                 .getChildAt(1) as TextView).text} clicked"
         )
-        mToast.show()
+        toast.show()
     }
 }
