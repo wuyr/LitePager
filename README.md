@@ -4,7 +4,7 @@
 ### 使用方式:
 #### 添加依赖：
 ```
-implementation 'com.wuyr:litepager:1.3.0'
+implementation 'com.wuyr:litepager:1.3.1'
 ```
 
 ### APIs:
@@ -91,6 +91,23 @@ implementation 'com.wuyr:litepager:1.3.0'
 ```
 
 #### 4. 设置适配器
+Item布局：
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="250dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp" />
+</FrameLayout>
+```
+Java代码：
 ```java
     litePager.setAdapter(new Adapter<ViewGroup>() {
 
@@ -98,7 +115,7 @@ implementation 'com.wuyr:litepager:1.3.0'
 
         @Override
         protected ViewGroup onCreateView(@NonNull ViewGroup parent) {
-            return (ViewGroup) LayoutInflater.from(parent.getContext()).inflate(R.layout.item_view, parent);
+            return (ViewGroup) LayoutInflater.from(parent.getContext()).inflate(R.layout.item_view, parent, false);
         }
 
         @Override
