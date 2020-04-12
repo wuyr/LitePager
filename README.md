@@ -91,6 +91,7 @@ implementation 'com.wuyr:litepager:1.3.1'
 ```
 
 #### 4. 设置适配器
+**示例：**
 Item布局：
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
