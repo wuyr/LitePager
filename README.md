@@ -110,26 +110,26 @@ Item布局：
 ```
 Java代码：
 ```java
-    litePager.setAdapter(new Adapter<ViewGroup>() {
+litePager.setAdapter(new Adapter<ViewGroup>() {
 
-        private List<String> mData = new ArrayList<>(Arrays.asList("Item 1", "Item2", "Item3"));
+    private List<String> mData = new ArrayList<>(Arrays.asList("Item 1", "Item2", "Item3"));
 
-        @Override
-        protected ViewGroup onCreateView(@NonNull ViewGroup parent) {
-            return (ViewGroup) LayoutInflater.from(parent.getContext()).inflate(R.layout.item_view, parent, false);
-        }
+    @Override
+    protected ViewGroup onCreateView(@NonNull ViewGroup parent) {
+        return (ViewGroup) LayoutInflater.from(parent.getContext()).inflate(R.layout.item_view, parent, false);
+    }
 
-        @Override
-        protected void onBindView(@NonNull ViewGroup viewGroup, int position) {
-            TextView textView = viewGroup.findViewById(R.id.text);
-            textView.setText(mData.get(position));
-        }
+    @Override
+    protected void onBindView(@NonNull ViewGroup viewGroup, int position) {
+        TextView textView = viewGroup.findViewById(R.id.text);
+        textView.setText(mData.get(position));
+    }
 
-        @Override
-        protected int getItemCount() {
-            return mData.size();
-        }
-    });
+    @Override
+    protected int getItemCount() {
+        return mData.size();
+    }
+});
 ```
 
 <br>
